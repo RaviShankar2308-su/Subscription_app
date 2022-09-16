@@ -81,7 +81,6 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["MY_APP_DATABASE_URL"] %>
   database: subscription_app_production
   username: subscription_app
   password: <%= ENV["SUBSCRIPTION_APP_DATABASE_PASSWORD"] %>
