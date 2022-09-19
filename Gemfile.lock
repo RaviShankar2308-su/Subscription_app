@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/omniauth/omniauth-github.git
+  revision: fa3e9cfb3c78c7cb26e641621d81b08627600cc2
+  branch: master
+  specs:
+    omniauth-github (2.0.0)
+      omniauth (~> 2.0)
+      omniauth-oauth2 (~> 1.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -155,9 +164,6 @@ GEM
       hashie (>= 3.4.6)
       rack (>= 2.2.3)
       rack-protection
-    omniauth-github (2.0.0)
-      omniauth (~> 2.0)
-      omniauth-oauth2 (~> 1.8)
     omniauth-google-oauth2 (1.1.1)
       jwt (>= 2.0)
       oauth2 (~> 2.0.6)
@@ -272,7 +278,7 @@ DEPENDENCIES
   devise
   importmap-rails
   jbuilder
-  omniauth-github
+  omniauth-github!
   omniauth-google-oauth2
   omniauth-rails_csrf_protection
   pg (~> 1.1)
