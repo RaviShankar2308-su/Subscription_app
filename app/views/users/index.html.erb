@@ -1,0 +1,6 @@
+<h1>Users:
+  <%= @user.length%>
+</h1>
+<% @user.each do |user| %>
+  <%= render 'shared/user', user:user %>
+<%end%>

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     omniauth_callbacks: 'users/omniauth_callbacks',
     registrations: 'users/registrations'
   }
+  resources :users, only: %i[index show]
   root "static_public#landing_page"
   get 'privacy', to: "static_public#privacy"
   get 'terms', to: "static_public#terms"

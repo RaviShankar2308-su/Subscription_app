@@ -13,6 +13,12 @@
           <div class="fa-solid fa-house-user"></div>
           Home
         <% end %>
+        <% if current_user %>
+          <%= link_to users_path, class: "nav-link #{'active fw-bold' if current_page?(users_path)}" do %>
+            <div class="fa-solid fa-users"></div>
+            User
+          <% end %>
+        <% end %>
         <%= link_to privacy_path, class: "nav-link #{'active fw-bold' if current_page?(privacy_path)}" do %>
           <div class="fa-solid fa-house-lock"></div>
           Privacy

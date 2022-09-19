@@ -1,0 +1,10 @@
+<%= user.id%>
+<%= ". "%>
+Email: 
+<%= link_to_unless_current user.email,user%>
+<% if user.name?%>
+  <br>
+  Name: 
+  <%= link_to_unless_current user.name.camelcase,user%>
+<% end%>
+<br>
