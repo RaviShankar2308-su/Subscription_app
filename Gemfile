@@ -72,3 +72,6 @@ group :test do
 end
 gem 'devise'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
+gem "omniauth-rails_csrf_protection"
+
