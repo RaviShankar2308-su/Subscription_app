@@ -24,7 +24,7 @@ class User < ApplicationRecord
     if name?
       name
     else
-      email
+      email.split(/@/).first.camelcase
     end
   end
 end
