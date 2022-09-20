@@ -2,13 +2,13 @@
 <%= ". "%>
 Email:
 <%= link_to_unless_current user.email,user%>
-<div class="ms-3">
-  <% if user.name?%>
+<% if user.name?%>
+  <div class="ms-3">
     Name:
     <%= link_to_unless_current user.name.camelcase,user%>
-  <% end%>
-  <br>
-</div>
+    <br>
+  </div>
+<% end%>
 <div class="ms-3">
   <%= 'sign_in_count'.humanize %>:
   <%= user.sign_in_count%>
