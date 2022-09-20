@@ -1,25 +1,36 @@
 <%= user.id%>
 <%= ". "%>
-Email: 
+Email:
 <%= link_to_unless_current user.email,user%>
-<% if user.name?%>
+<div class="ms-3">
+  <% if user.name?%>
+    Name:
+    <%= link_to_unless_current user.name.camelcase,user%>
+  <% end%>
   <br>
-  Name: 
-  <%= link_to_unless_current user.name.camelcase,user%>
-<% end%>
-<br>
-<%= 'sign_in_count'.humanize %>:
-<%= user.sign_in_count%>
-<br>
-<%= 'current_sign_in_at'.humanize %>:
-<%= user.current_sign_in_at%>
-<br>
-<%= 'last_sign_in_at'.humanize %>:
-<%= user.last_sign_in_at%>
-<br>
-<%= 'current_sign_in_ip'.humanize %>:
-<%= user.current_sign_in_ip%>
-<br>
-<%= 'last_sign_in_ip'.humanize %>:
-<%= user.last_sign_in_ip%>
-<br>
+</div>
+<div class="ms-3">
+  <%= 'sign_in_count'.humanize %>:
+  <%= user.sign_in_count%>
+  <br>
+</div>
+<div class="ms-3">
+  <%= 'current_sign_in_at'.humanize %>:
+  <%= user.current_sign_in_at%>
+  <br>
+</div>
+<div class="ms-3">
+  <%= 'last_sign_in_at'.humanize %>:
+  <%= user.last_sign_in_at%>
+  <br>
+</div>
+<div class="ms-3">
+  <%= 'current_sign_in_ip'.humanize %>:
+  <%= user.current_sign_in_ip%>
+  <br>
+</div>
+<div class="ms-3">
+  <%= 'last_sign_in_ip'.humanize %>:
+  <%= user.last_sign_in_ip%>
+  <br>
+</div>
